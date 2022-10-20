@@ -1,0 +1,236 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: rgba(8, 8, 8, 0.849);
+}
+nav {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #34495e;
+    border-radius: 0px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 black;
+}
+nav a{
+    font-size: 15px;
+    width: 100px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+a:hover {
+    height: 100%;
+    top:0;
+    z-index: 0;
+    background: #1ab4bc;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+a:active{
+    height: 100%;
+    top:0;
+    z-index: 0;
+    color: red;
+    background: wheat;
+    border-radius: 8px;
+}
+/*navigation End*/
+
+/*isi*/
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-sarif;
+    
+}
+
+.contact-page{
+    width:100%;
+    padding:60px 10px 10px 10px;
+    page-break-inside: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+h2{
+    width:100%;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    color:#322;
+    font-size:60px;
+}
+.contact-info, .contact-form{
+    flex:1;
+}
+.item{
+    margin-bottom:5px;
+    font-size:16px;
+    color:#322;
+    
+}
+.icon{
+    width:40px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.textb{
+    width:calc(50% - 10px);
+    height:50px;
+    padding:12px;
+    background-color:rgb(71, 66, 66);
+    border-radius: 5px;
+    border: none;
+    color:rgb(255, 255, 255);
+    margin-bottom:20px;
+}
+::placeholder{
+    color: white;
+}
+textarea{
+    width:100%;
+    min-height:200px;
+    max-height:400px;
+    resize: vertical;
+    border-radius: 5px;
+    padding:12px;
+    background-color:rgb(71, 66, 66);
+    border: none;
+    color:rgb(255, 255, 255);
+    margin-bottom:20px;
+}
+.btn{
+    width:120px;
+    height:40px;
+    margin-left: auto;
+    background-color:#322;
+    border: none;
+    color:#fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #322;
+    transition: .3s linear;
+}
+.btn:hover{
+    background-color: transparent;
+    color:#322;
+}
+@media screen and (max-width:980px){
+    .contact-page{
+        max-width:800px;
+    }
+    h2{
+        font-size:40px;
+        margin-bottom:30px;
+    }
+    .contact-info, .contact-form{
+        flex:100%;
+        margin-bottom:30px;
+    }
+    .textb{
+        width:100%;
+    }
+}
+
+
+
+/*isi end*/
+
+/*footer*/
+.footer {
+    background-color: #24262b;
+    padding: 40px 0;
+}
+.sosial h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.sosial h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.sosial a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all .3s ease;
+}
+.sosial a:hover{
+    color: #ffffff;
+    padding: 5px;
+}
+.sosial .link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+.sosial .link a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+    .sosial{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .sosial{
+        width: 100%;
+    }
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        to bottom,
+        #ff850a,
+        #ff3474
+    );
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+    background: #474747;
+}
